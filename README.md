@@ -150,9 +150,9 @@ The functions return:
 
 | Class | Rule                    |
 | ----- | ----------------------- |
-| Low   | price ≤ 21,000          |
-| Mid   | 21,000 < price ≤ 39,998 |
-| High  | price > 39,998          |
+| Low   | price ≤ 21,997.67          |
+| Mid   | 21,997.67 < price ≤ 42,599.00 |
+| High  | price > 42,599.00          |
 
 ### Models
 
@@ -170,12 +170,12 @@ The functions return:
 
 | Item       | Result                                              |
 | ---------- | --------------------------------------------------- |
-| Scaler     | RobustScaler                                        |
-| Encoder    | OrdinalEncoder                                      |
-| Model      | RandomForestClassifier                              |
-| Parameters | n_estimators=100, max_depth=20, min_samples_split=5 |
-| Accuracy   | 82.09%                                              |
-| Macro F1   | 81.43%                                              |
+| Scaler     | StandardScaler                                        |
+| Encoder    | OneHotEncoder                                      |
+| Model      | GradientBoostingClassifier                              |
+| Parameters | n_estimators=200, learning_rate=0.1, max_depth=5 |
+| Accuracy   | 84.11%                                              |
+| Macro F1   | 83.91%                                              |
 
 ---
 
